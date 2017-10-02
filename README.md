@@ -31,7 +31,7 @@ To take full advantage of the command line and use grunt tasks you will need to 
   Once all the node dependency modules are installed (through `npm install`) then for development, you can run  `npm run selenium-postinstall` followed by `npm run selenium-start`.  That's all there is to it.!. Please note that this step is only one time activity at the initial framework set up. Alternatively you can also use below options to start the selenium server
 
   1. Install Selenium (selenium-standalone) through NPM (this is the recommended way to install) as you can use it as a services in your framework without worrying to start the selenium server manually. Please note that you follow this below step if `selenium-standalone` package in not been installed through package manager. If you are behind a specific proxy. Then you need to set some environment variables:
-  
+
 #####         On OSX:
 
               NODE_TLS_REJECT_UNAUTHORIZED=0 selenium-standalone install`
