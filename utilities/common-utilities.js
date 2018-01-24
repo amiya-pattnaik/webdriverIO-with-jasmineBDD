@@ -358,7 +358,7 @@ module.exports = {
     /***************************************************************************************/
     /**
      * function db_execute(config, sqlQuery, callback)
-     * execute a SQL query on any RDBMS and gives query results
+     * execute a SQL statement / queries on any RDBMS and gives query results
      * @param {*} config - db connection strings
      * @param {*} sqlQuery - sql queries to execute
      * @param {callback} callback function that contains query results and gets called when the command finishes
@@ -383,11 +383,6 @@ module.exports = {
           return callback(rows);
         }); //end of exec block
       });//end of connect block
-    },
-
-    //just a demo function
-    sum : function (a, b) {
-      return a+b;
     },
 
 } // end of module
