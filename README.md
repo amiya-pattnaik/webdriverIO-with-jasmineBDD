@@ -64,7 +64,7 @@ npm run tests-mobile
 
 2. use `grunt webdriver:test`.  This executes all features in the [`./test/specs/*.js`]  directory with a Spec reporter by default and references the `suite.yourSpecific.conf.js` file. Refer to the ./test/config of jasmine-bdd
 
-Note: while running mobile tests please do the requisite Appium set up before you start execution. Refer [Appium](http://appium.io/getting-started.html?lang=en) for set up
+Note: Before running mobile tests, perform the requisite Appium setup. For hassle free Appium setup on OSX refer [appium-setup-made-easy-OSX](https://github.com/amiya-pattnaik/appium-setup-made-easy-OSX) OR refer [Appium Docs](http://appium.io/getting-started.html?lang=en)
 
 ### Config Files
 
@@ -104,7 +104,7 @@ The JSON reporter is especially versatile. Since it produces a literal in a key 
 
 You can write test either by using Cucumber BDD framework or Jasmine BDD framework. You can choose javascript based design pattern or ES6 based. This project is ES6 friendly (via babel-register)
 
-For complete WebdriverIO API](http://webdriver.io/api.html) methods to write your automation.
+Refer complete [WebdriverIO API](http://webdriver.io/api.html) methods to write your automation tests.
 
 
 #### Using Jasmine JavaScript framework
@@ -112,8 +112,8 @@ For complete WebdriverIO API](http://webdriver.io/api.html) methods to write you
 Tests are written in the Jasmine framework. More about Jasmine can be found at https://jasmine.github.io/
 
 Tests are place in `*.specs.js` files in the `/test/specs/` directory. A typical test will look similar to this:
+```
 //example.js
-
 //using synchronous mode//
 
 describe('WebdriverIO search', function() {
@@ -126,6 +126,7 @@ describe('WebdriverIO search', function() {
     });
 });
 
+```
 ### The Page Object Design Pattern
 
 Within your web app's UI there are areas that your tests interact with. A Page Object simply models these as objects within the test code. This reduces the amount of duplicated code and means that if the UI changes, the fix need only be applied in one place. In other wards one of the challenges of writing test automation is keeping your [selectors] (classes, id's, or xpath') up to date with the latest version of your code.  The next challenge is to keep the code you write nice and [DRY] (Don't Repeat Yourself).  The page object pattern helps us accomplish this in one solution.  Instead of including our selectors in our step definitions(in cucumber) or in Spec file (in Jasmine or Mocha), we instead place them in a `<pagename>.js` file where we can manage all these selectors and methods together. Your test file should only call the test methods.
