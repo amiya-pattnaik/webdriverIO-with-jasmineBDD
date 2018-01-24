@@ -1,7 +1,7 @@
 {
-  "name": "ngtaf4js-jasmine",
+  "name": "webdriverIO-with-jasmineBDD",
   "version": "1.1.0",
-  "description": "Next Generation Test Automation Framework ( web & mobile ui-automation) 4(for) JavaScript binding",
+  "description": "WebDriver bindings for Node.js with Jasmine",
   "main": "index.js",
   "scripts": {
     "node-inspector": "node-inspector --debug-port 5859 --no-preload",
@@ -19,14 +19,13 @@
     "web",
     "testing",
     "webdriverjs",
-    "webdriver",
-    "automation"
+    "webdriverio",
+    "automation",
+    "jasmine"
   ],
   "author": "Amiya Pattanaik <pattnaik_amiya@yahoo.com>",
   "license": "ISC",
   "dependencies": {
-    "any-db": "^2.2.0",
-    "any-db-jdbc": "^1.0.0",
     "appium": "^1.6.3",
     "assert": "^1.4.1",
     "babel-core": "^6.7.4",
@@ -38,6 +37,7 @@
     "junit-viewer": "^4.11.1",
     "lodash": "^4.17.4",
     "mocha": "^2.5.3",
+    "node-any-jdbc": "^1.0.6",
     "node-excel-to-json": "0.0.3",
     "node-inspector": "^1.1.1",
     "underscore": "^1.8.3",
