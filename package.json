@@ -1,6 +1,6 @@
 {
   "name": "webdriverIO-with-jasmineBDD",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "WebDriver bindings for Node.js with Jasmine",
   "main": "index.js",
   "scripts": {
