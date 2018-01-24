@@ -57,12 +57,13 @@ To take full advantage of the command line and use grunt tasks you will need to 
 
 ### Run Some Sample Tests
 
-To execute the entire test suite in local development,
-1. npm run tests
-          or
-npm run tests-mobile
+To execute the entire test suite in local development, you can use any one of the options mentioned below
 
-2. use `grunt webdriver:test`.  This executes all features in the [`./test/specs/*.js`]  directory with a Spec reporter by default and references the `suite.yourSpecific.conf.js` file. Refer to the ./test/config of jasmine-bdd
+Option 1: `npm run tests`
+
+Option 2:  `grunt webdriver:test`.  This executes all features in the [`./test/specs/*.js`]  directory with a Spec reporter by default and references the `suite.yourSpecific.conf.js` file. Refer to the ./test/config of jasmine-bdd
+
+To execute tests on mobile device use : `npm run tests-mobile`
 
 Note: Before running mobile tests, perform the requisite Appium setup. For hassle free Appium setup on OSX refer [appium-setup-made-easy-OSX](https://github.com/amiya-pattnaik/appium-setup-made-easy-OSX) OR refer [Appium Docs](http://appium.io/getting-started.html?lang=en)
 
