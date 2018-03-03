@@ -1,13 +1,7 @@
 
 //Sample example on how to use the library functions in your any.js file
 var  utl  = require('../utilities/common-utilities.js');
-var  dbc  = require('./db');
-var  db   = require('node-any-jdbc');
 
-//console.log(__dirname);
-
-//console.log(sum(120, -20));         // sum() is available in common-liberary.js
-//console.log($NODE_PATH);
 
 utl.excel_getTableRow(__dirname+'/sample.xlsx', 'info', 'emp_id', '101', function(results){
   //console.log(results);
@@ -24,11 +18,6 @@ utl.excel_getAllSheetData(__dirname+'/sample.xlsx', function(results){
   //then do what ever validation you to do withe results
 });
 
-var sqlQuery = 'SELECT * FROM emp_info';
-db.execute(dbc.mysql, sqlQuery, function(results){
-  console.log(results);
-  //then do what ever validation you to do withe results
-});
 
 var JSONObject = [{"animals": {name:"cat", name:"dog", name:"dog"}}];
 
