@@ -4,7 +4,7 @@ This repository contains a collection of sample webdriverIO (Selenium - Node.js/
 
 ### Installation
 
-This project is tested on ***Node 6.10.0*** and up.  While earlier versions of node may be compatible, they have not been tested or verified.
+This project is tested on ***Node v6.10.0 to v8.9.0***.  While earlier versions of node may be compatible, they have not been tested or verified.
 
 `JDK 1.8:` Install JDK 1.8+ and make sure class path is set properly. JAVA is require to start `Selenium Server` nothing else.
 
@@ -53,17 +53,17 @@ To take full advantage of the command line and use grunt tasks you will need to 
   2. Download the latest selenium standalone server version: and then for example
     $ java -jar selenium-server-standalone-3.4.0.jar. This option is require if you have not done the step No-2. Else ignore it. this is the other way of doing.
 
-  Note: While installing through sudo command - you need to provide System admin password. On windows dont use `sudo`
+  Note: While installing through sudo command - you need to provide System admin password. On windows don't use `sudo`
 
 ### Run Some Sample Tests
 
 To execute the entire test suite in local development, you can use any one of the options mentioned below
 
-Option 1: `npm run tests`
+Option 1: `npm run test`
 
 Option 2:  `grunt webdriver:test`.  This executes all features in the [`./test/specs/*.js`]  directory with a Spec reporter by default and references the `suite.yourSpecific.conf.js` file. Refer to the ./test/config of jasmine-bdd
 
-To execute tests on mobile device use : `npm run tests-mobile`
+To execute tests on mobile device use : `npm run test-mobile`
 
 Note: Before running mobile tests, perform the requisite Appium setup. For hassle free Appium setup on OSX refer [appium-setup-made-easy-OSX](https://github.com/amiya-pattnaik/appium-setup-made-easy-OSX) OR refer [Appium Docs](http://appium.io/getting-started.html?lang=en)
 
@@ -138,18 +138,52 @@ An object called `Page` will be created with the prototype model or by ES6 class
 
 It is preferable to separate page objects into individual files that end with `.page.js`.  These will require the basic `page.js` prototype construct / abstract class and create new objects for each individual page. For more information on the implementation, refer to the `/test/pageobjects` directory.
 
+#### Using multi selector option to query element
+
+It defines one or more selectors/tags to uniquely identify the object at runtime. You can query any element with more than one selector at a time. The benefit of using multiSelector() method is, during run time, if one selector is failed, still you can identify that element with another alternative selector and on which makes your test script robust.
+
+*method multiSelector(selectotList)
+* @param {selectotList} - an arraylist which contains different alternative selector
+* for example - ["[href='/guide.html1']", "//*[@id='userid']", "[@class='myclassname']"];
+
+```
+import utl   from '/utilities/common-utilities';
+
+browser.element(utl.multiSelector(['//*[@id="userid"]', '//*[@name="userAlias"]', "[ng-model='$ctrl.signInData[field.name]']"]));
+
+// or inside your page class you can use like ...
+//get usernameInput()  { return browser.element(utl.multiSelector(['//*[@id="userid"]', '//*[@name="userAlias"]', "[ng-model='$ctrl.signInData[field.name]']"])); }
+
+```
 ### Working with DataBase
 
 A relational database is, simply, a database that stores related information across multiple tables and allows you to query information in more than one table at the same time. Your application under test displays data from these database. So when you are actually performing automation testing it is very likely that you need to verify the data between actual (which you got it from browser) Vs expected (which you will get it from the database by executing SQL statements on database). This can be done by below statements in your code.
+```
+//example of connection to Oracle DataBase
 
 var  db   = require('node-any-jdbc');
 
-db.execute(dbconfig, sqlQuery, callback);
+cogfig = {
+  libpath: './config/drivers/oracle/ojdbc7.jar',
+  drivername: 'oracle.jdbc.driver.OracleDriver',
+  url:  'jdbc:oracle:thin:QA/password123@//abc-test.corp.int:1527/stage1',
+  // uri: 'jdbc:oracle:thin://abc-test.corp.int:1527/stage1',
+  // user: 'QA',
+  // password: 'password123',
+};
 
-for more information, please visit `node-any-jdbc` module which can be [found here](https://www.npmjs.com/package/node-any-jdbc)
+//example of sample select query to fetch the result set
 
-Note: `node-any-jdbc` is already packaged under this project. You can start using it right away. You can also find sample examples under /util-examples/database-example.js
+var sql = 'SELECT * FROM emp_info where emp_id = "1001"';
+db.execute(cogfig, sql, function(results){
+  console.log(results);
+});
 
+For trouble shooting and more information, please visit `node-any-jdbc` module which can be [found here](https://www.npmjs.com/package/node-any-jdbc)
+
+Note: `node-any-jdbc` is NOT packaged under this project. If you need, you can install it and start using it right away. You can also find sample examples under /util-examples/database-example.js
+
+```
 ### Common utilities
 
 Refer to the common Javascript functions that provides clean, performant methods for manipulating objects, collections, MS-Excel utilities, DataBase utilities etc. Few sample code can be found in ./util-examples/
