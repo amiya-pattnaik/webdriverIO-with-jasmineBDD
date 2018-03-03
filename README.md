@@ -142,8 +142,8 @@ It is preferable to separate page objects into individual files that end with `.
 
 It defines one or more selectors/tags to uniquely identify the object at runtime. You can query any element with more than one selector at a time. The benefit of using multiSelector() method is, during run time, if one selector is failed, still you can identify that element with another alternative selector on and on... which makes your test script robust.
 
-*method : multiSelector(selectotList)
-* @param {selectotList} - an arraylist which contains different alternative selector
+*method : multiSelector(selectorList)
+* @param {selectorList} - an arraylist which contains different alternative selector
 * for example - ["[href='/guide.html1']", "//*[@id='userid']", "[@class='myclassname']"];
 
 ```
