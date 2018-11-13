@@ -32,21 +32,18 @@ To take full advantage of the command line and use grunt tasks you will need to 
   Once all the node dependency modules are installed (through `npm install`) then for development, you can run  `npm run selenium-postinstall` followed by `npm run selenium-start` if you wish to start it manually else you can use `services: ['selenium-standalone'],` in .conf.js to start it automatically which has been added as part of this project. That's all there is to it.!. Please note that this step is only one time activity at the initial framework set up. Alternatively you can also use below options to start the selenium server.
 
   1. Install Selenium (selenium-standalone) through NPM (this is the recommended way to install) as you can use it as a services in your framework without worrying to start the selenium server manually. Please note that you follow this below step if `selenium-standalone` package in not been installed through package manager. If you are behind a specific proxy. Then you need to set environment variables:
-  ```
-  On OSX:
 
-        NODE_TLS_REJECT_UNAUTHORIZED=0 selenium-standalone install
-        NODE_TLS_REJECT_UNAUTHORIZED=0 selenium-standalone start
+  - On OSX:
+    - NODE_TLS_REJECT_UNAUTHORIZED=0
 
-  On Windows:
+ - On Windows:
+    - setx NODE_TLS_REJECT_UNAUTHORIZED 0
 
-        setx NODE_TLS_REJECT_UNAUTHORIZED 0
-  ```
+```
   sudo npm install selenium-standalone@latest -g
-
   sudo selenium-standalone install
-
   selenium-standalone start
+```
 
   OR
 
@@ -87,7 +84,11 @@ Test reporter, that prints detailed results to console.
 
 The Allure Reporter creates [Allure](http://allure.qatools.ru/) test reports which is an HTML generated website with all necessary information to debug your test results and take a look on error screenshots. Add allure to the reporters array in config file and define the output directory of the allure reports.
 
-To generate and view an allure report locally, run `npm run allure-report`.
+To generate and view an allure report locally, run `npm run allure-report`. A typical Allure report will look like this
+
+![ScreenShot](https://github.com/allure-framework/allure2/blob/master/.github/readme-img.png)
+
+Allure has several other reporting tools optimized for the CI server of your choice.  You can [view the documentation here](http://wiki.qatools.ru/display/AL/Reporting).
 
 Allure has several other reporting tools optimized for the CI server of your choice.  You can [view the documentation here](http://wiki.qatools.ru/display/AL/Reporting).
 
