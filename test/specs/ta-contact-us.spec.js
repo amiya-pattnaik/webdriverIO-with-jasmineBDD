@@ -1,6 +1,5 @@
 
 import contactUs from '../pageobjects/ta-contactus.page';
-import assert from 'assert';
 
 /*
 	This is a BDD test using Jasmine JavaScript framework
