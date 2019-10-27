@@ -1,7 +1,6 @@
 
 import contactUs from '../pageobjects/ta-contactus.page';
 
-
 /*
 	This is a BDD test using Jasmine JavaScript framework
 */
