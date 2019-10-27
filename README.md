@@ -64,7 +64,9 @@ Allure has several other reporting tools optimized for the CI server of your cho
 
 A WebdriverIO reporter that creates Jenkins compatible XML based JUnit reports. Add it to the reports array in the config file and define the directory where the xml files should get stored. webdriverIO will create an xml file for each instance under test and the filename will contain the browser and OS. Please note, this has been added in .config.
 
-To generate and view an allure report locally, run `npm run junit-report`.
+To generate and view an junit/xunit report locally, run `npm run junit-report`. A typical junit/xunit report will look like this
+
+![ScreenShot](https://github.com/amiya-pattnaik/snapshots/blob/master/junit-result.png)
 
 ### Develop automation scripts (for both desktop browser and mobile browser / app)
 
