@@ -115,28 +115,60 @@ exports.config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-    baseUrl: 'http://www.phptravels.net',
+    baseUrl: 'http://the-internet.herokuapp.com/',
     waitforTimeout: 10000,            // Default timeout for all waitFor* commands.
     connectionRetryTimeout: 90000,    // Default timeout in milliseconds for request  // if Selenium Grid doesn't send response
     connectionRetryCount: 3,          // Default request retries count
 
-    // Test runner services
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
 
-    services: ['selenium-standalone'],
-    // services: [browserstack'],
+    // user: process.env.SAUCE_USERNAME,
+    // key: process.env.SAUCE_ACCESS_KEY,
+    // region: 'us',
+
     // user: process.env.BROWSERSTACK_USERNAME,
     // key: process.env.BROWSERSTACK_ACCESS_KEY,
-    // browserstackLocal: true,
 
-    // Framework you want to run your specs with.
-    // The following are supported: Mocha, Jasmine, and Cucumber
-    // see also: https://webdriver.io/docs/frameworks.html
+    services: [
+      'selenium-standalone',
+      // for Sauce connect execution
+      // ['sauce', {
+      //       sauceConnect: true,
+      //       sauceConnectOpts: {
+      //           // ...
+      //       }
+      // }],
+
+      // for Browserstack  execution
+      // ['browserstack', {
+      //       browserstackLocal: true
+      //   }]
+    ],
+
+    // Test reporter for stdout and other additional reporting
+    reporters: [
+      'spec',
+      ['junit', {
+          outputDir: './test/reports/junit-results/',
+          outputFileFormat: function(opts) { // optional
+              return `results-${opts.cid}.${opts.capabilities}.xml`
+          }
+        }],
+
+      ['allure', {
+          outputDir: './test/reports/allure-results/',
+          disableWebdriverStepsReporting: true,
+          disableWebdriverScreenshotsReporting: true,
+        }],
+
+      ['json',{
+            outputDir: './test/report/json-results',
+        }],
+    ],
     //
-    // Make sure you have the wdio adapter package for the specific framework installed
-    // before running any tests.
+    //
     framework: 'jasmine',
     //
     // Test reporter for stdout.
@@ -156,25 +188,7 @@ exports.config = {
             // do something
         }
     },
-
-    reporters: [
-        'spec',
-        ['junit', {
-            outputDir: './test/reports/junit-results/',
-            outputFileFormat: function(opts) { // optional
-                return `results-${opts.cid}.${opts.capabilities}.xml`
-            }
-          }
-        ],
-
-        ['allure', {
-            outputDir: './test/reports/allure-results/',
-            disableWebdriverStepsReporting: true,
-            disableWebdriverScreenshotsReporting: false,
-          }
-        ],
-    ],
-
+    //
     //
     // =====
     // Hooks
