@@ -1,0 +1,70 @@
+2020-09-14T01:31:55.513Z INFO @wdio/local-runner: Run worker command: run
+2020-09-14T01:31:55.537Z DEBUG @wdio/local-runner:utils: init remote session
+2020-09-14T01:31:55.553Z INFO webdriverio: Initiate new session using the ./protocol-stub protocol
+2020-09-14T01:31:58.744Z DEBUG @wdio/utils:initialiseServices: initialise service "selenium-standalone" as NPM package
+2020-09-14T01:31:59.437Z DEBUG @wdio/local-runner:utils: init remote session
+2020-09-14T01:31:59.438Z INFO webdriverio: Initiate new session using the webdriver protocol
+2020-09-14T01:31:59.442Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session
+2020-09-14T01:31:59.442Z INFO webdriver: DATA {
+  capabilities: {
+    alwaysMatch: { browserName: 'chrome', 'goog:chromeOptions': {} },
+    firstMatch: [ {} ]
+  },
+  desiredCapabilities: { browserName: 'chrome', 'goog:chromeOptions': {} }
+}
+2020-09-14T01:32:04.899Z INFO webdriver: COMMAND navigateTo("http://the-internet.herokuapp.com/login")
+2020-09-14T01:32:04.900Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/190f73882224087b966314398440c41c/url
+2020-09-14T01:32:04.900Z INFO webdriver: DATA { url: 'http://the-internet.herokuapp.com/login' }
+2020-09-14T01:32:08.230Z INFO webdriver: COMMAND findElement("xpath", "//*[@name="username"]")
+2020-09-14T01:32:08.230Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/190f73882224087b966314398440c41c/element
+2020-09-14T01:32:08.230Z INFO webdriver: DATA { using: 'xpath', value: '//*[@name="username"]' }
+2020-09-14T01:32:08.256Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '53b148a3-c3a0-4419-af5d-00d1019cd8f2'
+}
+2020-09-14T01:32:08.264Z INFO webdriver: COMMAND elementClear("53b148a3-c3a0-4419-af5d-00d1019cd8f2")
+2020-09-14T01:32:08.264Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/190f73882224087b966314398440c41c/element/53b148a3-c3a0-4419-af5d-00d1019cd8f2/clear
+2020-09-14T01:32:08.475Z INFO webdriver: COMMAND elementSendKeys("53b148a3-c3a0-4419-af5d-00d1019cd8f2", "<Screenshot[base64]>")
+2020-09-14T01:32:08.475Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/190f73882224087b966314398440c41c/element/53b148a3-c3a0-4419-af5d-00d1019cd8f2/value
+2020-09-14T01:32:08.475Z INFO webdriver: DATA { text: 'tomsmith' }
+2020-09-14T01:32:08.708Z INFO webdriver: COMMAND findElement("xpath", "//*[@name="password"]")
+2020-09-14T01:32:08.708Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/190f73882224087b966314398440c41c/element
+2020-09-14T01:32:08.708Z INFO webdriver: DATA { using: 'xpath', value: '//*[@name="password"]' }
+2020-09-14T01:32:08.728Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'ff6d4048-4335-4ad2-aca8-9e351daf7d06'
+}
+2020-09-14T01:32:08.733Z INFO webdriver: COMMAND elementClear("ff6d4048-4335-4ad2-aca8-9e351daf7d06")
+2020-09-14T01:32:08.733Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/190f73882224087b966314398440c41c/element/ff6d4048-4335-4ad2-aca8-9e351daf7d06/clear
+2020-09-14T01:32:08.821Z INFO webdriver: COMMAND elementSendKeys("ff6d4048-4335-4ad2-aca8-9e351daf7d06", "SuperSecretPassword!")
+2020-09-14T01:32:08.821Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/190f73882224087b966314398440c41c/element/ff6d4048-4335-4ad2-aca8-9e351daf7d06/value
+2020-09-14T01:32:08.821Z INFO webdriver: DATA { text: 'SuperSecretPassword!' }
+2020-09-14T01:32:09.003Z INFO webdriver: COMMAND findElement("xpath", "//button[contains(., "Login")]")
+2020-09-14T01:32:09.003Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/190f73882224087b966314398440c41c/element
+2020-09-14T01:32:09.004Z INFO webdriver: DATA { using: 'xpath', value: '//button[contains(., "Login")]' }
+2020-09-14T01:32:09.021Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'd521250f-2d14-4116-9b6e-9dc9b505da19'
+}
+2020-09-14T01:32:09.026Z INFO webdriver: COMMAND elementClick("d521250f-2d14-4116-9b6e-9dc9b505da19")
+2020-09-14T01:32:09.026Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/190f73882224087b966314398440c41c/element/d521250f-2d14-4116-9b6e-9dc9b505da19/click
+2020-09-14T01:32:10.130Z INFO webdriver: COMMAND findElement("xpath", "//*[@class="subheader"]")
+2020-09-14T01:32:10.130Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/190f73882224087b966314398440c41c/element
+2020-09-14T01:32:10.130Z INFO webdriver: DATA { using: 'xpath', value: '//*[@class="subheader"]' }
+2020-09-14T01:32:10.146Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '1a9ac83b-21cf-400f-8b43-23eb20316845'
+}
+2020-09-14T01:32:10.149Z INFO webdriver: COMMAND getElementText("1a9ac83b-21cf-400f-8b43-23eb20316845")
+2020-09-14T01:32:10.149Z INFO webdriver: [GET] http://localhost:4444/wd/hub/session/190f73882224087b966314398440c41c/element/1a9ac83b-21cf-400f-8b43-23eb20316845/text
+2020-09-14T01:32:10.170Z INFO webdriver: RESULT Welcome to the Secure Area. When you are done click logout below.
+2020-09-14T01:32:10.187Z INFO webdriver: COMMAND getLogTypes()
+2020-09-14T01:32:10.187Z INFO webdriver: [GET] http://localhost:4444/wd/hub/session/190f73882224087b966314398440c41c/se/log/types
+2020-09-14T01:32:10.195Z INFO webdriver: RESULT [ 'browser', 'driver' ]
+2020-09-14T01:32:10.196Z DEBUG @wdio/runner: Fetching logs for browser, driver
+2020-09-14T01:32:10.196Z INFO webdriver: COMMAND getLogs("browser")
+2020-09-14T01:32:10.196Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/190f73882224087b966314398440c41c/se/log
+2020-09-14T01:32:10.196Z INFO webdriver: DATA { type: 'browser' }
+2020-09-14T01:32:10.197Z INFO webdriver: COMMAND getLogs("driver")
+2020-09-14T01:32:10.197Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/190f73882224087b966314398440c41c/se/log
+2020-09-14T01:32:10.197Z INFO webdriver: DATA { type: 'driver' }
+2020-09-14T01:32:10.211Z INFO webdriver: RESULT []
+2020-09-14T01:32:10.212Z INFO webdriver: RESULT []
+2020-09-14T01:32:10.212Z INFO webdriver: COMMAND deleteSession()
+2020-09-14T01:32:10.213Z INFO webdriver: [DELETE] http://localhost:4444/wd/hub/session/190f73882224087b966314398440c41c

@@ -10,27 +10,23 @@ It support ES6, ES8 (via babel-register) and uses Grunt to manage tasks, provide
 ### Installation
 This project is tested on **Node v12.0.0** and above.  While earlier versions of node may be compatible, but they have not been verified.
 
-`JDK 1.8:` Install JDK 1.8+ and make sure class path is set properly. JAVA is require to start `Selenium Server` on your local environment nothing else.
+`Node.JS:` Install  from the site - https://nodejs.org/en/  take the LTS version based on your Operating system. Please make sure you install NodeJS globally. To take full advantage of the command line and use grunt tasks you will need to make sure that you have added `node_modules/.bin` to your `$PATH`.  Otherwise you will need to install `npm install -g  grunt-cli` globally.
 
-`Node.JS:` Install  from the site - https://nodejs.org/en/  take the LTS version based on your Operating system. Please make sure you install NodeJS globally. Recommended version is 8.10.0. OR  If you have nvm installed globally, you run `nvm install` to get the latest version of node specified in the`.nvmrc` file [here](/.nvmrc).  If you don't use nvm, be sure that you are using a compatible version. Further details on nvm can be found on the official [github page](https://github.com/creationix/nvm). MAC OSX users are best suited to install nvm with homebrew `brew install nvm`.
 
-Now navigate to the framework's package.json folder and run `npm install` to grab all dependencies.
+`JDK 1.8:` It is optional, install JDK 1.8+ and make sure class path is set properly. JAVA is require to start `Selenium Server` on your local environment nothing else.
 
-To take full advantage of the command line and use grunt tasks you will need to make sure that you have added `node_modules/.bin` to your `$PATH`.  Otherwise you will need to install the following globally:
-
-  `npm install -g  grunt-cli`
 
 ### Selenium Tests / Appium Tests
 
-  To run your test you must have selenium / Appium server up and running to execute any webdriverIO tests, or it will fail fast with an error. To start selenium automatically it has been added as part of `services: ['selenium-standalone']` in the .conf.js.  That's all there is to it.!.
+  To run your test you must have selenium / Appium server up and running to execute any webdriverIO tests, or it will fail fast with an error. To start selenium automatically it has been added as part of `services: ['selenium-standalone']` in the *.conf.js.  That's all there is to it.!.
 
 ### Run Some Sample Tests
 
 To execute the entire test suite in local development, you can use any one of the options mentioned below
 
-Option 1: `npm run test`
+Option 1: `npm run test-local`
 
-Option 2:  `grunt webdriver:test`.  This executes all features in the [`./test/specs/*.js`]  directory with a Spec reporter by default and references the `suite.yourSpecific.conf.js` file. Refer to the ./test/config of jasmine-bdd.
+Option 2:  `grunt webdriver:test-local`.  This executes all features in the [`./test/specs/*.js`]  directory with a Spec reporter by default.
 
 💡 Before running mobile tests, perform the requisite Appium setup. For hassle free `one click Appium setup on OSX` refer [appium-setup-made-easy-OSX](https://github.com/amiya-pattnaik/appium-setup-made-easy-OSX) or refer [Appium Docs](http://appium.io/getting-started.html?lang=en)
 
@@ -38,9 +34,9 @@ Option 2:  `grunt webdriver:test`.  This executes all features in the [`./test/s
 
 WebdriverIO uses configuration files to setup and execute tests in specific ways.  The configuration is fully customizable, and different functions can be invoked before, during and after each test or test suite.  Config files are found in the `/test/config/` directory and all end with `*.conf.js`.  These can be called via the the cli
 
-### SauceLabs/BrowserStack Integration
+### SauceLabs / BrowserStack Integration
 
-Sample code has been added in for executing tests in SauceLabs/BrowserStack environment. You just need to provide your SauceLabs/BrowserStack credentials in the config file. look for Services sessions in the `*conf.js file`.
+`SauceLabs` and `BrowserStack` specific code has been added in the `wdio.sauce.conf.js` and  `wdio.browserstack.conf.js` under the /test/config folder. You just need to provide your SauceLabs/BrowserStack credentials in the config file. To run test on SauceLabs, execute command `npm run test-sauce` and on BrowserStack `npm run test-browserstack`.
 
 ### Reporters
 

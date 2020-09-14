@@ -1,0 +1,113 @@
+2020-09-14T01:31:55.568Z INFO @wdio/local-runner: Run worker command: run
+2020-09-14T01:31:55.579Z DEBUG @wdio/local-runner:utils: init remote session
+2020-09-14T01:31:55.590Z INFO webdriverio: Initiate new session using the ./protocol-stub protocol
+2020-09-14T01:31:58.728Z DEBUG @wdio/utils:initialiseServices: initialise service "selenium-standalone" as NPM package
+2020-09-14T01:31:59.394Z DEBUG @wdio/local-runner:utils: init remote session
+2020-09-14T01:31:59.395Z INFO webdriverio: Initiate new session using the webdriver protocol
+2020-09-14T01:31:59.471Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session
+2020-09-14T01:31:59.471Z INFO webdriver: DATA {
+  capabilities: {
+    alwaysMatch: { browserName: 'firefox', 'moz:firefoxOptions': [Object] },
+    firstMatch: [ {} ]
+  },
+  desiredCapabilities: { browserName: 'firefox', 'moz:firefoxOptions': { args: [Array] } }
+}
+2020-09-14T01:32:19.779Z INFO webdriver: COMMAND navigateTo("http://the-internet.herokuapp.com/dynamic_loading/2")
+2020-09-14T01:32:19.779Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/ad151ce4-6d37-764a-b6f2-d57c42fa9809/url
+2020-09-14T01:32:19.780Z INFO webdriver: DATA { url: 'http://the-internet.herokuapp.com/dynamic_loading/2' }
+2020-09-14T01:32:21.093Z INFO webdriver: COMMAND findElement("css selector", "#finish")
+2020-09-14T01:32:21.094Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/ad151ce4-6d37-764a-b6f2-d57c42fa9809/element
+2020-09-14T01:32:21.095Z INFO webdriver: DATA { using: 'css selector', value: '#finish' }
+2020-09-14T01:32:21.146Z INFO webdriver: RESULT {
+  error: 'no such element',
+  message: 'Unable to locate element: #finish',
+  stacktrace: 'WebDriverError@chrome://marionette/content/error.js:175:5\n' +
+    'NoSuchElementError@chrome://marionette/content/error.js:387:5\n' +
+    'element.find/</<@chrome://marionette/content/element.js:331:16\n'
+}
+2020-09-14T01:32:21.461Z INFO webdriver: COMMAND findElements("css selector", "#finish")
+2020-09-14T01:32:21.462Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/ad151ce4-6d37-764a-b6f2-d57c42fa9809/elements
+2020-09-14T01:32:21.464Z INFO webdriver: DATA { using: 'css selector', value: '#finish' }
+2020-09-14T01:32:21.537Z INFO webdriver: RESULT []
+2020-09-14T01:32:21.544Z INFO webdriver: COMMAND findElement("xpath", ".//button[normalize-space() = "Start"]")
+2020-09-14T01:32:21.544Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/ad151ce4-6d37-764a-b6f2-d57c42fa9809/element
+2020-09-14T01:32:21.544Z INFO webdriver: DATA { using: 'xpath', value: './/button[normalize-space() = "Start"]' }
+2020-09-14T01:32:21.773Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '493d6051-ab8f-044f-85f9-d6b559e39589'
+}
+2020-09-14T01:32:21.787Z INFO webdriver: COMMAND elementClick("493d6051-ab8f-044f-85f9-d6b559e39589")
+2020-09-14T01:32:21.788Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/ad151ce4-6d37-764a-b6f2-d57c42fa9809/element/493d6051-ab8f-044f-85f9-d6b559e39589/click
+2020-09-14T01:32:22.194Z INFO webdriver: COMMAND findElement("css selector", "#finish")
+2020-09-14T01:32:22.195Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/ad151ce4-6d37-764a-b6f2-d57c42fa9809/element
+2020-09-14T01:32:22.195Z INFO webdriver: DATA { using: 'css selector', value: '#finish' }
+2020-09-14T01:32:22.241Z INFO webdriver: RESULT {
+  error: 'no such element',
+  message: 'Unable to locate element: #finish',
+  stacktrace: 'WebDriverError@chrome://marionette/content/error.js:175:5\n' +
+    'NoSuchElementError@chrome://marionette/content/error.js:387:5\n' +
+    'element.find/</<@chrome://marionette/content/element.js:331:16\n'
+}
+2020-09-14T01:32:22.244Z INFO webdriver: COMMAND findElements("css selector", "#finish")
+2020-09-14T01:32:22.245Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/ad151ce4-6d37-764a-b6f2-d57c42fa9809/elements
+2020-09-14T01:32:22.245Z INFO webdriver: DATA { using: 'css selector', value: '#finish' }
+2020-09-14T01:32:22.275Z INFO webdriver: RESULT []
+2020-09-14T01:32:22.753Z INFO webdriver: COMMAND findElements("css selector", "#finish")
+2020-09-14T01:32:22.759Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/ad151ce4-6d37-764a-b6f2-d57c42fa9809/elements
+2020-09-14T01:32:22.759Z INFO webdriver: DATA { using: 'css selector', value: '#finish' }
+2020-09-14T01:32:22.822Z INFO webdriver: RESULT []
+2020-09-14T01:32:23.289Z INFO webdriver: COMMAND findElements("css selector", "#finish")
+2020-09-14T01:32:23.290Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/ad151ce4-6d37-764a-b6f2-d57c42fa9809/elements
+2020-09-14T01:32:23.290Z INFO webdriver: DATA { using: 'css selector', value: '#finish' }
+2020-09-14T01:32:23.338Z INFO webdriver: RESULT []
+2020-09-14T01:32:23.748Z INFO webdriver: COMMAND findElements("css selector", "#finish")
+2020-09-14T01:32:23.748Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/ad151ce4-6d37-764a-b6f2-d57c42fa9809/elements
+2020-09-14T01:32:23.748Z INFO webdriver: DATA { using: 'css selector', value: '#finish' }
+2020-09-14T01:32:23.788Z INFO webdriver: RESULT []
+2020-09-14T01:32:24.246Z INFO webdriver: COMMAND findElements("css selector", "#finish")
+2020-09-14T01:32:24.246Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/ad151ce4-6d37-764a-b6f2-d57c42fa9809/elements
+2020-09-14T01:32:24.246Z INFO webdriver: DATA { using: 'css selector', value: '#finish' }
+2020-09-14T01:32:24.290Z INFO webdriver: RESULT []
+2020-09-14T01:32:24.745Z INFO webdriver: COMMAND findElements("css selector", "#finish")
+2020-09-14T01:32:24.746Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/ad151ce4-6d37-764a-b6f2-d57c42fa9809/elements
+2020-09-14T01:32:24.746Z INFO webdriver: DATA { using: 'css selector', value: '#finish' }
+2020-09-14T01:32:24.784Z INFO webdriver: RESULT []
+2020-09-14T01:32:25.248Z INFO webdriver: COMMAND findElements("css selector", "#finish")
+2020-09-14T01:32:25.248Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/ad151ce4-6d37-764a-b6f2-d57c42fa9809/elements
+2020-09-14T01:32:25.248Z INFO webdriver: DATA { using: 'css selector', value: '#finish' }
+2020-09-14T01:32:25.288Z INFO webdriver: RESULT []
+2020-09-14T01:32:25.745Z INFO webdriver: COMMAND findElements("css selector", "#finish")
+2020-09-14T01:32:25.745Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/ad151ce4-6d37-764a-b6f2-d57c42fa9809/elements
+2020-09-14T01:32:25.745Z INFO webdriver: DATA { using: 'css selector', value: '#finish' }
+2020-09-14T01:32:25.753Z INFO webdriver: RESULT []
+2020-09-14T01:32:26.249Z INFO webdriver: COMMAND findElements("css selector", "#finish")
+2020-09-14T01:32:26.250Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/ad151ce4-6d37-764a-b6f2-d57c42fa9809/elements
+2020-09-14T01:32:26.250Z INFO webdriver: DATA { using: 'css selector', value: '#finish' }
+2020-09-14T01:32:26.259Z INFO webdriver: RESULT []
+2020-09-14T01:32:26.752Z INFO webdriver: COMMAND findElements("css selector", "#finish")
+2020-09-14T01:32:26.752Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/ad151ce4-6d37-764a-b6f2-d57c42fa9809/elements
+2020-09-14T01:32:26.753Z INFO webdriver: DATA { using: 'css selector', value: '#finish' }
+2020-09-14T01:32:26.781Z INFO webdriver: RESULT []
+2020-09-14T01:32:27.245Z INFO webdriver: COMMAND findElements("css selector", "#finish")
+2020-09-14T01:32:27.245Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/ad151ce4-6d37-764a-b6f2-d57c42fa9809/elements
+2020-09-14T01:32:27.245Z INFO webdriver: DATA { using: 'css selector', value: '#finish' }
+2020-09-14T01:32:27.256Z INFO webdriver: RESULT [
+  {
+    'element-6066-11e4-a52e-4f735466cecf': '5480807d-9380-a14f-b88a-46bb0178bfc9'
+  }
+]
+2020-09-14T01:32:27.259Z INFO webdriver: COMMAND findElement("css selector", "#finish")
+2020-09-14T01:32:27.260Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/ad151ce4-6d37-764a-b6f2-d57c42fa9809/element
+2020-09-14T01:32:27.260Z INFO webdriver: DATA { using: 'css selector', value: '#finish' }
+2020-09-14T01:32:27.270Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '5480807d-9380-a14f-b88a-46bb0178bfc9'
+}
+2020-09-14T01:32:27.272Z INFO webdriver: COMMAND findElements("css selector", "#finish")
+2020-09-14T01:32:27.273Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/ad151ce4-6d37-764a-b6f2-d57c42fa9809/elements
+2020-09-14T01:32:27.273Z INFO webdriver: DATA { using: 'css selector', value: '#finish' }
+2020-09-14T01:32:27.286Z INFO webdriver: RESULT [
+  {
+    'element-6066-11e4-a52e-4f735466cecf': '5480807d-9380-a14f-b88a-46bb0178bfc9'
+  }
+]
+2020-09-14T01:32:27.306Z INFO webdriver: COMMAND deleteSession()
+2020-09-14T01:32:27.307Z INFO webdriver: [DELETE] http://localhost:4444/wd/hub/session/ad151ce4-6d37-764a-b6f2-d57c42fa9809

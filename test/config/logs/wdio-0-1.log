@@ -1,0 +1,199 @@
+2020-09-14T01:31:55.411Z INFO @wdio/local-runner: Run worker command: run
+2020-09-14T01:31:55.432Z DEBUG @wdio/local-runner:utils: init remote session
+2020-09-14T01:31:55.435Z INFO webdriverio: Initiate new session using the ./protocol-stub protocol
+2020-09-14T01:31:58.680Z DEBUG @wdio/utils:initialiseServices: initialise service "selenium-standalone" as NPM package
+2020-09-14T01:31:59.341Z DEBUG @wdio/local-runner:utils: init remote session
+2020-09-14T01:31:59.342Z INFO webdriverio: Initiate new session using the webdriver protocol
+2020-09-14T01:31:59.346Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session
+2020-09-14T01:31:59.346Z INFO webdriver: DATA {
+  capabilities: {
+    alwaysMatch: { browserName: 'chrome', 'goog:chromeOptions': {} },
+    firstMatch: [ {} ]
+  },
+  desiredCapabilities: { browserName: 'chrome', 'goog:chromeOptions': {} }
+}
+2020-09-14T01:32:04.705Z INFO webdriver: COMMAND navigateTo("http://the-internet.herokuapp.com/dynamic_loading/2")
+2020-09-14T01:32:04.705Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/1053c02a7c89c5b420b6bc2dd3f5e0c4/url
+2020-09-14T01:32:04.705Z INFO webdriver: DATA { url: 'http://the-internet.herokuapp.com/dynamic_loading/2' }
+2020-09-14T01:32:08.148Z INFO webdriver: COMMAND findElement("css selector", "#finish")
+2020-09-14T01:32:08.148Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/1053c02a7c89c5b420b6bc2dd3f5e0c4/element
+2020-09-14T01:32:08.148Z INFO webdriver: DATA { using: 'css selector', value: '#finish' }
+2020-09-14T01:32:08.267Z INFO webdriver: RESULT {
+  error: 'no such element',
+  message: 'no such element: Unable to locate element: {"method":"css ' +
+    'selector","selector":"#finish"}\n  (Session info: ' +
+    'chrome=85.0.4183.102)',
+  stacktrace: '0   85.0.4183.87-x64-chromedriver       0x000000010aaa71b9 ' +
+    '85.0.4183.87-x64-chromedriver + 4911545\n1   ' +
+    '85.0.4183.87-x64-chromedriver       0x000000010aa46e03 ' +
+    '85.0.4183.87-x64-chromedriver + 4517379\n2   ' +
+    '85.0.4183.87-x64-chromedriver       0x000000010a6b4dc6 ' +
+    '85.0.4183.87-x64-chromedriver + 773574\n3   85.0.4183.87-x64-chromedriver ' +
+    '      0x000000010a61cd63 85.0.4183.87-x64-chromedriver + 150883\n4   ' +
+    '85.0.4183.87-x64-chromedriver       0x000000010a6469e7 ' +
+    '85.0.4183.87-x64-chromedriver + 322023\n5   85.0.4183.87-x64-chromedriver ' +
+    '      0x000000010a63895d 85.0.4183.87-x64-chromedriver + 264541\n6   ' +
+    '85.0.4183.87-x64-chromedriver       0x000000010a644c41 ' +
+    '85.0.4183.87-x64-chromedriver + 314433\n7   85.0.4183.87-x64-chromedriver ' +
+    '      0x000000010a638c23 85.0.4183.87-x64-chromedriver + 265251\n8   ' +
+    '85.0.4183.87-x64-chromedriver       0x000000010a612720 ' +
+    '85.0.4183.87-x64-chromedriver + 108320\n9   85.0.4183.87-x64-chromedriver ' +
+    '      0x000000010a613693 85.0.4183.87-x64-chromedriver + 112275\n10  ' +
+    '85.0.4183.87-x64-chromedriver       0x000000010aa6ff72 ' +
+    '85.0.4183.87-x64-chromedriver + 4685682\n11  ' +
+    '85.0.4183.87-x64-chromedriver       0x000000010aa7db3a ' +
+    '85.0.4183.87-x64-chromedriver + 4741946\n12  ' +
+    '85.0.4183.87-x64-chromedriver       0x000000010aa7d801 ' +
+    '85.0.4183.87-x64-chromedriver + 4741121\n13  ' +
+    '85.0.4183.87-x64-chromedriver       0x000000010aa5325e ' +
+    '85.0.4183.87-x64-chromedriver + 4567646\n14  ' +
+    '85.0.4183.87-x64-chromedriver       0x000000010aa7e061 ' +
+    '85.0.4183.87-x64-chromedriver + 4743265\n15  ' +
+    '85.0.4183.87-x64-chromedriver       0x000000010aa64d0a ' +
+    '85.0.4183.87-x64-chromedriver + 4640010\n16  ' +
+    '85.0.4183.87-x64-chromedriver       0x000000010aa970ba ' +
+    '85.0.4183.87-x64-chromedriver + 4845754\n17  ' +
+    '85.0.4183.87-x64-chromedriver       0x000000010aaad387 ' +
+    '85.0.4183.87-x64-chromedriver + 4936583\n18  libsystem_pthread.dylib      ' +
+    '       0x00007fff6ff8c109 _pthread_start + 148\n19  ' +
+    'libsystem_pthread.dylib             0x00007fff6ff87b8b thread_start + 15\n'
+}
+2020-09-14T01:32:08.290Z INFO webdriver: COMMAND findElements("css selector", "#finish")
+2020-09-14T01:32:08.290Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/1053c02a7c89c5b420b6bc2dd3f5e0c4/elements
+2020-09-14T01:32:08.290Z INFO webdriver: DATA { using: 'css selector', value: '#finish' }
+2020-09-14T01:32:08.352Z INFO webdriver: RESULT []
+2020-09-14T01:32:08.366Z INFO webdriver: COMMAND findElement("xpath", ".//button[normalize-space() = "Start"]")
+2020-09-14T01:32:08.366Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/1053c02a7c89c5b420b6bc2dd3f5e0c4/element
+2020-09-14T01:32:08.366Z INFO webdriver: DATA { using: 'xpath', value: './/button[normalize-space() = "Start"]' }
+2020-09-14T01:32:08.394Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '8f259e1b-045c-400c-8055-94da086bf678'
+}
+2020-09-14T01:32:08.397Z INFO webdriver: COMMAND elementClick("8f259e1b-045c-400c-8055-94da086bf678")
+2020-09-14T01:32:08.397Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/1053c02a7c89c5b420b6bc2dd3f5e0c4/element/8f259e1b-045c-400c-8055-94da086bf678/click
+2020-09-14T01:32:08.613Z INFO webdriver: COMMAND findElement("css selector", "#finish")
+2020-09-14T01:32:08.613Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/1053c02a7c89c5b420b6bc2dd3f5e0c4/element
+2020-09-14T01:32:08.613Z INFO webdriver: DATA { using: 'css selector', value: '#finish' }
+2020-09-14T01:32:08.652Z INFO webdriver: RESULT {
+  error: 'no such element',
+  message: 'no such element: Unable to locate element: {"method":"css ' +
+    'selector","selector":"#finish"}\n  (Session info: ' +
+    'chrome=85.0.4183.102)',
+  stacktrace: '0   85.0.4183.87-x64-chromedriver       0x000000010aaa71b9 ' +
+    '85.0.4183.87-x64-chromedriver + 4911545\n1   ' +
+    '85.0.4183.87-x64-chromedriver       0x000000010aa46e03 ' +
+    '85.0.4183.87-x64-chromedriver + 4517379\n2   ' +
+    '85.0.4183.87-x64-chromedriver       0x000000010a6b4dc6 ' +
+    '85.0.4183.87-x64-chromedriver + 773574\n3   85.0.4183.87-x64-chromedriver ' +
+    '      0x000000010a61cd63 85.0.4183.87-x64-chromedriver + 150883\n4   ' +
+    '85.0.4183.87-x64-chromedriver       0x000000010a6469e7 ' +
+    '85.0.4183.87-x64-chromedriver + 322023\n5   85.0.4183.87-x64-chromedriver ' +
+    '      0x000000010a63895d 85.0.4183.87-x64-chromedriver + 264541\n6   ' +
+    '85.0.4183.87-x64-chromedriver       0x000000010a644c41 ' +
+    '85.0.4183.87-x64-chromedriver + 314433\n7   85.0.4183.87-x64-chromedriver ' +
+    '      0x000000010a638c23 85.0.4183.87-x64-chromedriver + 265251\n8   ' +
+    '85.0.4183.87-x64-chromedriver       0x000000010a612720 ' +
+    '85.0.4183.87-x64-chromedriver + 108320\n9   85.0.4183.87-x64-chromedriver ' +
+    '      0x000000010a613693 85.0.4183.87-x64-chromedriver + 112275\n10  ' +
+    '85.0.4183.87-x64-chromedriver       0x000000010aa6ff72 ' +
+    '85.0.4183.87-x64-chromedriver + 4685682\n11  ' +
+    '85.0.4183.87-x64-chromedriver       0x000000010aa7db3a ' +
+    '85.0.4183.87-x64-chromedriver + 4741946\n12  ' +
+    '85.0.4183.87-x64-chromedriver       0x000000010aa7d801 ' +
+    '85.0.4183.87-x64-chromedriver + 4741121\n13  ' +
+    '85.0.4183.87-x64-chromedriver       0x000000010aa5325e ' +
+    '85.0.4183.87-x64-chromedriver + 4567646\n14  ' +
+    '85.0.4183.87-x64-chromedriver       0x000000010aa7e061 ' +
+    '85.0.4183.87-x64-chromedriver + 4743265\n15  ' +
+    '85.0.4183.87-x64-chromedriver       0x000000010aa64d0a ' +
+    '85.0.4183.87-x64-chromedriver + 4640010\n16  ' +
+    '85.0.4183.87-x64-chromedriver       0x000000010aa970ba ' +
+    '85.0.4183.87-x64-chromedriver + 4845754\n17  ' +
+    '85.0.4183.87-x64-chromedriver       0x000000010aaad387 ' +
+    '85.0.4183.87-x64-chromedriver + 4936583\n18  libsystem_pthread.dylib      ' +
+    '       0x00007fff6ff8c109 _pthread_start + 148\n19  ' +
+    'libsystem_pthread.dylib             0x00007fff6ff87b8b thread_start + 15\n'
+}
+2020-09-14T01:32:08.660Z INFO webdriver: COMMAND findElements("css selector", "#finish")
+2020-09-14T01:32:08.660Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/1053c02a7c89c5b420b6bc2dd3f5e0c4/elements
+2020-09-14T01:32:08.661Z INFO webdriver: DATA { using: 'css selector', value: '#finish' }
+2020-09-14T01:32:08.713Z INFO webdriver: RESULT []
+2020-09-14T01:32:09.160Z INFO webdriver: COMMAND findElements("css selector", "#finish")
+2020-09-14T01:32:09.160Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/1053c02a7c89c5b420b6bc2dd3f5e0c4/elements
+2020-09-14T01:32:09.160Z INFO webdriver: DATA { using: 'css selector', value: '#finish' }
+2020-09-14T01:32:09.174Z INFO webdriver: RESULT []
+2020-09-14T01:32:09.663Z INFO webdriver: COMMAND findElements("css selector", "#finish")
+2020-09-14T01:32:09.663Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/1053c02a7c89c5b420b6bc2dd3f5e0c4/elements
+2020-09-14T01:32:09.663Z INFO webdriver: DATA { using: 'css selector', value: '#finish' }
+2020-09-14T01:32:09.677Z INFO webdriver: RESULT []
+2020-09-14T01:32:10.161Z INFO webdriver: COMMAND findElements("css selector", "#finish")
+2020-09-14T01:32:10.162Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/1053c02a7c89c5b420b6bc2dd3f5e0c4/elements
+2020-09-14T01:32:10.162Z INFO webdriver: DATA { using: 'css selector', value: '#finish' }
+2020-09-14T01:32:10.172Z INFO webdriver: RESULT []
+2020-09-14T01:32:10.661Z INFO webdriver: COMMAND findElements("css selector", "#finish")
+2020-09-14T01:32:10.661Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/1053c02a7c89c5b420b6bc2dd3f5e0c4/elements
+2020-09-14T01:32:10.661Z INFO webdriver: DATA { using: 'css selector', value: '#finish' }
+2020-09-14T01:32:10.673Z INFO webdriver: RESULT []
+2020-09-14T01:32:11.165Z INFO webdriver: COMMAND findElements("css selector", "#finish")
+2020-09-14T01:32:11.165Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/1053c02a7c89c5b420b6bc2dd3f5e0c4/elements
+2020-09-14T01:32:11.165Z INFO webdriver: DATA { using: 'css selector', value: '#finish' }
+2020-09-14T01:32:11.180Z INFO webdriver: RESULT []
+2020-09-14T01:32:11.659Z INFO webdriver: COMMAND findElements("css selector", "#finish")
+2020-09-14T01:32:11.660Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/1053c02a7c89c5b420b6bc2dd3f5e0c4/elements
+2020-09-14T01:32:11.660Z INFO webdriver: DATA { using: 'css selector', value: '#finish' }
+2020-09-14T01:32:11.671Z INFO webdriver: RESULT []
+2020-09-14T01:32:12.164Z INFO webdriver: COMMAND findElements("css selector", "#finish")
+2020-09-14T01:32:12.164Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/1053c02a7c89c5b420b6bc2dd3f5e0c4/elements
+2020-09-14T01:32:12.164Z INFO webdriver: DATA { using: 'css selector', value: '#finish' }
+2020-09-14T01:32:12.184Z INFO webdriver: RESULT []
+2020-09-14T01:32:12.666Z INFO webdriver: COMMAND findElements("css selector", "#finish")
+2020-09-14T01:32:12.666Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/1053c02a7c89c5b420b6bc2dd3f5e0c4/elements
+2020-09-14T01:32:12.666Z INFO webdriver: DATA { using: 'css selector', value: '#finish' }
+2020-09-14T01:32:12.676Z INFO webdriver: RESULT []
+2020-09-14T01:32:13.164Z INFO webdriver: COMMAND findElements("css selector", "#finish")
+2020-09-14T01:32:13.164Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/1053c02a7c89c5b420b6bc2dd3f5e0c4/elements
+2020-09-14T01:32:13.164Z INFO webdriver: DATA { using: 'css selector', value: '#finish' }
+2020-09-14T01:32:13.182Z INFO webdriver: RESULT []
+2020-09-14T01:32:13.664Z INFO webdriver: COMMAND findElements("css selector", "#finish")
+2020-09-14T01:32:13.664Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/1053c02a7c89c5b420b6bc2dd3f5e0c4/elements
+2020-09-14T01:32:13.664Z INFO webdriver: DATA { using: 'css selector', value: '#finish' }
+2020-09-14T01:32:13.675Z INFO webdriver: RESULT [
+  {
+    'element-6066-11e4-a52e-4f735466cecf': '28b2a3e5-ee13-444b-b35d-ff21cd0e4357'
+  }
+]
+2020-09-14T01:32:13.679Z INFO webdriver: COMMAND findElement("css selector", "#finish")
+2020-09-14T01:32:13.679Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/1053c02a7c89c5b420b6bc2dd3f5e0c4/element
+2020-09-14T01:32:13.679Z INFO webdriver: DATA { using: 'css selector', value: '#finish' }
+2020-09-14T01:32:13.689Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '28b2a3e5-ee13-444b-b35d-ff21cd0e4357'
+}
+2020-09-14T01:32:13.692Z INFO webdriver: COMMAND findElements("css selector", "#finish")
+2020-09-14T01:32:13.692Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/1053c02a7c89c5b420b6bc2dd3f5e0c4/elements
+2020-09-14T01:32:13.692Z INFO webdriver: DATA { using: 'css selector', value: '#finish' }
+2020-09-14T01:32:13.702Z INFO webdriver: RESULT [
+  {
+    'element-6066-11e4-a52e-4f735466cecf': '28b2a3e5-ee13-444b-b35d-ff21cd0e4357'
+  }
+]
+2020-09-14T01:32:13.718Z INFO webdriver: COMMAND getLogTypes()
+2020-09-14T01:32:13.718Z INFO webdriver: [GET] http://localhost:4444/wd/hub/session/1053c02a7c89c5b420b6bc2dd3f5e0c4/se/log/types
+2020-09-14T01:32:13.724Z INFO webdriver: RESULT [ 'browser', 'driver' ]
+2020-09-14T01:32:13.725Z DEBUG @wdio/runner: Fetching logs for browser, driver
+2020-09-14T01:32:13.725Z INFO webdriver: COMMAND getLogs("browser")
+2020-09-14T01:32:13.725Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/1053c02a7c89c5b420b6bc2dd3f5e0c4/se/log
+2020-09-14T01:32:13.725Z INFO webdriver: DATA { type: 'browser' }
+2020-09-14T01:32:13.726Z INFO webdriver: COMMAND getLogs("driver")
+2020-09-14T01:32:13.727Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/1053c02a7c89c5b420b6bc2dd3f5e0c4/se/log
+2020-09-14T01:32:13.727Z INFO webdriver: DATA { type: 'driver' }
+2020-09-14T01:32:13.733Z INFO webdriver: RESULT [
+  {
+    level: 'SEVERE',
+    message: 'http://the-internet.herokuapp.com/favicon.ico - Failed to load ' +
+      'resource: the server responded with a status of 404 (Not Found)',
+    source: 'network',
+    timestamp: 1600047132669
+  }
+]
+2020-09-14T01:32:13.735Z INFO webdriver: RESULT []
+2020-09-14T01:32:13.737Z INFO webdriver: COMMAND deleteSession()
+2020-09-14T01:32:13.737Z INFO webdriver: [DELETE] http://localhost:4444/wd/hub/session/1053c02a7c89c5b420b6bc2dd3f5e0c4

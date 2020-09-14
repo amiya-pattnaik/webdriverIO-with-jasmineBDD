@@ -1,0 +1,145 @@
+20:31:59.558 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "chrome",
+  "goog:chromeOptions": {
+  }
+}
+20:31:59.563 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
+20:31:59.567 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "chrome",
+  "goog:chromeOptions": {
+  }
+}
+20:31:59.567 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
+20:31:59.578 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "firefox",
+  "moz:firefoxOptions": {
+    "args": [
+      "-remote-debugging-port",
+      "51945"
+    ]
+  }
+}
+20:31:59.579 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+20:31:59.733 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "chrome",
+  "goog:chromeOptions": {
+  }
+}
+20:31:59.733 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
+20:31:59.823 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "firefox",
+  "moz:firefoxOptions": {
+    "args": [
+      "-remote-debugging-port",
+      "51946"
+    ]
+  }
+}
+20:31:59.823 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+20:31:59.835 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "chrome",
+  "goog:chromeOptions": {
+  }
+}
+20:31:59.835 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
+20:31:59.915 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "firefox",
+  "moz:firefoxOptions": {
+    "args": [
+      "-remote-debugging-port",
+      "51950"
+    ]
+  }
+}
+20:31:59.915 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+20:31:59.947 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "firefox",
+  "moz:firefoxOptions": {
+    "args": [
+      "-remote-debugging-port",
+      "52211"
+    ]
+  }
+}
+20:31:59.947 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 4990
+Only local connections are allStarting ChromeDrowed.i
+Starting ChromeDriver Please see https://chromedriver.c8h5r.o0m.i4u1m8.3o.r8g7/secur i(tyc-cdon6s7i1d3eerbaft9i2ofnas1 cfaocrc 0suggestions on keeping ChromeDriver safe.
+ver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 19131
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 27882
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 10616
+Only local connections are allowed.
+PleaChromeDriver was started successfully.
+ChromeDriver was started successfully.
+se see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+1600047120501	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-remote-debugging-port" "52211" "-foreground" "-no-remote" "-profile" "/var/folders/z0/1h1r35bs1rvctk7k8yd3ck3c0000gn/T/rust_mozprofileFdWApV"
+1600047120541	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-remote-debugging-port" "51945" "-foreground" "-no-remote" "-profile" "/var/folders/z0/1h1r35bs1rvctk7k8yd3ck3c0000gn/T/rust_mozprofileKmY1dw"
+1600047120547	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-remote-debugging-port" "51950" "-foreground" "-no-remote" "-profile" "/var/folders/z0/1h1r35bs1rvctk7k8yd3ck3c0000gn/T/rust_mozprofileL7nAKz"
+1600047120548	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-remote-debugging-port" "51946" "-foreground" "-no-remote" "-profile" "/var/folders/z0/1h1r35bs1rvctk7k8yd3ck3c0000gn/T/rust_mozprofileSWFTPR"
+20:32:04.069 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+20:32:04.116 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 1053c02a7c89c5b420b6bc2dd3f5e0c4 (org.openqa.selenium.chrome.ChromeDriverService)
+20:32:04.271 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+20:32:04.281 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 380aebabcd97d7480ce5060799ea968f (org.openqa.selenium.chrome.ChromeDriverService)
+20:32:04.294 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+20:32:04.297 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session c61b41afa26e5c0d21211611947f4032 (org.openqa.selenium.chrome.ChromeDriverService)
+20:32:04.409 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+20:32:04.410 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 190f73882224087b966314398440c41c (org.openqa.selenium.chrome.ChromeDriverService)
+20:32:09.276 INFO [ActiveSessions$1.onStop] - Removing session c61b41afa26e5c0d21211611947f4032 (org.openqa.selenium.chrome.ChromeDriverService)
+20:32:10.270 INFO [ActiveSessions$1.onStop] - Removing session 190f73882224087b966314398440c41c (org.openqa.selenium.chrome.ChromeDriverService)
+1600047131393	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1600047131423	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1600047131430	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1600047131875	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1600047131977	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1600047131978	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1600047131978	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1600047131978	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1600047131979	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1600047131979	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1600047131979	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1600047131980	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1600047132027	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1600047132027	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1600047132028	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1600047132036	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+20:32:12.151 INFO [ActiveSessions$1.onStop] - Removing session 380aebabcd97d7480ce5060799ea968f (org.openqa.selenium.chrome.ChromeDriverService)
+1600047132477	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1600047132477	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1600047132478	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1600047132478	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+20:32:13.791 INFO [ActiveSessions$1.onStop] - Removing session 1053c02a7c89c5b420b6bc2dd3f5e0c4 (org.openqa.selenium.chrome.ChromeDriverService)
+JavaScript error: chrome://remote/content/RemoteAgent.jsm, line 36: Error: Remote agent is disabled by preference
+JavaScript error: chrome://remote/content/RemoteAgent.jsm, line 36: Error: Remote agent is disabled by preference
+JavaScript error: chrome://remote/content/RemoteAgent.jsm, line 36: Error: Remote agent is disabled by preference
+1600047139305	Marionette	INFO	Listening on port 52235
+DevTools listening on true
+1600047139368	Marionette	INFO	Listening on port 52234
+DevTools listening on true
+1600047139382	Marionette	INFO	Listening on port 52236
+DevTools listening on true
+20:32:19.535 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+20:32:19.537 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session ad151ce4-6d37-764a-b6f2-d57c42fa9809 (org.openqa.selenium.firefox.GeckoDriverService)
+20:32:19.556 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+20:32:19.559 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session f5bfc035-5443-184a-86e8-a1e4a6cdbf8e (org.openqa.selenium.firefox.GeckoDriverService)
+20:32:19.590 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+20:32:19.592 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 553d973a-c50a-5048-bd0a-5566b99371d9 (org.openqa.selenium.firefox.GeckoDriverService)
+JavaScript error: chrome://remote/content/RemoteAgent.jsm, line 36: Error: Remote agent is disabled by preference
+1600047139802	Marionette	INFO	Listening on port 52232
+DevTools listening on true
+20:32:20.032 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+20:32:20.034 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 9c12a526-4963-9542-b8ab-31c0827438ff (org.openqa.selenium.firefox.GeckoDriverService)
+1600047144009	Marionette	INFO	Stopped listening on port 52236
+1600047144089	Marionette	INFO	Stopped listening on port 52234
+20:32:27.141 INFO [ActiveSessions$1.onStop] - Removing session f5bfc035-5443-184a-86e8-a1e4a6cdbf8e (org.openqa.selenium.firefox.GeckoDriverService)
+20:32:27.179 INFO [ActiveSessions$1.onStop] - Removing session 553d973a-c50a-5048-bd0a-5566b99371d9 (org.openqa.selenium.firefox.GeckoDriverService)
+1600047147314	Marionette	INFO	Stopped listening on port 52235
+1600047147701	Marionette	INFO	Stopped listening on port 52232
+JavaScript error: https://search.yahoo.com/search;_ylt=AwrE1xgmyF5fekwAt2RDDWVH;_ylc=X1MDMTE5NzgwNDg2NwRfcgMyBGZyAwRncHJpZAMyMFpzVllad1RBLlJYaFhFTmdmUHFBBG5fcnNsdAMwBG5fc3VnZwMxMARvcmlnaW4Dc2VhcmNoLnlhaG9vLmNvbQRwb3MDMARwcXN0cgMEcHFzdHJsAwRxc3RybAMyMARxdWVyeQNTZWxlbml1bSUyMFdlYmRyaXZlcgR0X3N0bXADMTYwMDA0NzE0Nw--?fr2=sb-top-search&p=Selenium+Webdriver&fr=sfp&iscqry=, line 16: TypeError: YAHOO.Util is undefined
+20:32:29.285 INFO [ActiveSessions$1.onStop] - Removing session 9c12a526-4963-9542-b8ab-31c0827438ff (org.openqa.selenium.firefox.GeckoDriverService)
+20:32:29.819 INFO [ActiveSessions$1.onStop] - Removing session ad151ce4-6d37-764a-b6f2-d57c42fa9809 (org.openqa.selenium.firefox.GeckoDriverService)

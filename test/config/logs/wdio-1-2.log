@@ -1,0 +1,58 @@
+2020-09-14T01:31:55.605Z INFO @wdio/local-runner: Run worker command: run
+2020-09-14T01:31:55.641Z DEBUG @wdio/local-runner:utils: init remote session
+2020-09-14T01:31:55.643Z INFO webdriverio: Initiate new session using the ./protocol-stub protocol
+2020-09-14T01:31:58.816Z DEBUG @wdio/utils:initialiseServices: initialise service "selenium-standalone" as NPM package
+2020-09-14T01:31:59.524Z DEBUG @wdio/local-runner:utils: init remote session
+2020-09-14T01:31:59.584Z INFO webdriverio: Initiate new session using the webdriver protocol
+2020-09-14T01:31:59.770Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session
+2020-09-14T01:31:59.770Z INFO webdriver: DATA {
+  capabilities: {
+    alwaysMatch: { browserName: 'firefox', 'moz:firefoxOptions': [Object] },
+    firstMatch: [ {} ]
+  },
+  desiredCapabilities: { browserName: 'firefox', 'moz:firefoxOptions': { args: [Array] } }
+}
+2020-09-14T01:32:20.233Z INFO webdriver: COMMAND navigateTo("http://the-internet.herokuapp.com/login")
+2020-09-14T01:32:20.234Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/f5bfc035-5443-184a-86e8-a1e4a6cdbf8e/url
+2020-09-14T01:32:20.235Z INFO webdriver: DATA { url: 'http://the-internet.herokuapp.com/login' }
+2020-09-14T01:32:21.902Z INFO webdriver: COMMAND findElement("xpath", "//*[@name="username"]")
+2020-09-14T01:32:21.903Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/f5bfc035-5443-184a-86e8-a1e4a6cdbf8e/element
+2020-09-14T01:32:21.903Z INFO webdriver: DATA { using: 'xpath', value: '//*[@name="username"]' }
+2020-09-14T01:32:22.013Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'b891b271-d44b-434a-906b-92430c7014fe'
+}
+2020-09-14T01:32:22.057Z INFO webdriver: COMMAND elementClear("b891b271-d44b-434a-906b-92430c7014fe")
+2020-09-14T01:32:22.057Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/f5bfc035-5443-184a-86e8-a1e4a6cdbf8e/element/b891b271-d44b-434a-906b-92430c7014fe/clear
+2020-09-14T01:32:22.137Z INFO webdriver: COMMAND elementSendKeys("b891b271-d44b-434a-906b-92430c7014fe", "<Screenshot[base64]>")
+2020-09-14T01:32:22.137Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/f5bfc035-5443-184a-86e8-a1e4a6cdbf8e/element/b891b271-d44b-434a-906b-92430c7014fe/value
+2020-09-14T01:32:22.138Z INFO webdriver: DATA { text: 'tomsmith' }
+2020-09-14T01:32:22.267Z INFO webdriver: COMMAND findElement("xpath", "//*[@name="password"]")
+2020-09-14T01:32:22.267Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/f5bfc035-5443-184a-86e8-a1e4a6cdbf8e/element
+2020-09-14T01:32:22.267Z INFO webdriver: DATA { using: 'xpath', value: '//*[@name="password"]' }
+2020-09-14T01:32:22.438Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'a28d90a4-5578-c543-ad4c-124090f52b6a'
+}
+2020-09-14T01:32:22.447Z INFO webdriver: COMMAND elementClear("a28d90a4-5578-c543-ad4c-124090f52b6a")
+2020-09-14T01:32:22.448Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/f5bfc035-5443-184a-86e8-a1e4a6cdbf8e/element/a28d90a4-5578-c543-ad4c-124090f52b6a/clear
+2020-09-14T01:32:22.561Z INFO webdriver: COMMAND elementSendKeys("a28d90a4-5578-c543-ad4c-124090f52b6a", "SuperSecretPassword!")
+2020-09-14T01:32:22.562Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/f5bfc035-5443-184a-86e8-a1e4a6cdbf8e/element/a28d90a4-5578-c543-ad4c-124090f52b6a/value
+2020-09-14T01:32:22.562Z INFO webdriver: DATA { text: 'SuperSecretPassword!' }
+2020-09-14T01:32:22.641Z INFO webdriver: COMMAND findElement("xpath", "//button[contains(., "Login")]")
+2020-09-14T01:32:22.641Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/f5bfc035-5443-184a-86e8-a1e4a6cdbf8e/element
+2020-09-14T01:32:22.641Z INFO webdriver: DATA { using: 'xpath', value: '//button[contains(., "Login")]' }
+2020-09-14T01:32:22.675Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '8998ce18-2bf1-7343-8872-ff03b69ec8dc'
+}
+2020-09-14T01:32:22.679Z INFO webdriver: COMMAND elementClick("8998ce18-2bf1-7343-8872-ff03b69ec8dc")
+2020-09-14T01:32:22.679Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/f5bfc035-5443-184a-86e8-a1e4a6cdbf8e/element/8998ce18-2bf1-7343-8872-ff03b69ec8dc/click
+2020-09-14T01:32:23.561Z INFO webdriver: COMMAND findElement("xpath", "//*[@class="subheader"]")
+2020-09-14T01:32:23.561Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/f5bfc035-5443-184a-86e8-a1e4a6cdbf8e/element
+2020-09-14T01:32:23.561Z INFO webdriver: DATA { using: 'xpath', value: '//*[@class="subheader"]' }
+2020-09-14T01:32:23.660Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'b4b4b525-76b9-b349-9c36-55241bcedc64'
+}
+2020-09-14T01:32:23.693Z INFO webdriver: COMMAND getElementText("b4b4b525-76b9-b349-9c36-55241bcedc64")
+2020-09-14T01:32:23.693Z INFO webdriver: [GET] http://localhost:4444/wd/hub/session/f5bfc035-5443-184a-86e8-a1e4a6cdbf8e/element/b4b4b525-76b9-b349-9c36-55241bcedc64/text
+2020-09-14T01:32:23.753Z INFO webdriver: RESULT Welcome to the Secure Area. When you are done click logout below.
+2020-09-14T01:32:23.959Z INFO webdriver: COMMAND deleteSession()
+2020-09-14T01:32:23.959Z INFO webdriver: [DELETE] http://localhost:4444/wd/hub/session/f5bfc035-5443-184a-86e8-a1e4a6cdbf8e

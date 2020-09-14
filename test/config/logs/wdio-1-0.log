@@ -1,0 +1,66 @@
+2020-09-14T01:31:55.521Z INFO @wdio/local-runner: Run worker command: run
+2020-09-14T01:31:55.575Z DEBUG @wdio/local-runner:utils: init remote session
+2020-09-14T01:31:55.591Z INFO webdriverio: Initiate new session using the ./protocol-stub protocol
+2020-09-14T01:31:58.689Z DEBUG @wdio/utils:initialiseServices: initialise service "selenium-standalone" as NPM package
+2020-09-14T01:31:59.356Z DEBUG @wdio/local-runner:utils: init remote session
+2020-09-14T01:31:59.357Z INFO webdriverio: Initiate new session using the webdriver protocol
+2020-09-14T01:31:59.366Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session
+2020-09-14T01:31:59.366Z INFO webdriver: DATA {
+  capabilities: {
+    alwaysMatch: { browserName: 'firefox', 'moz:firefoxOptions': [Object] },
+    firstMatch: [ {} ]
+  },
+  desiredCapabilities: { browserName: 'firefox', 'moz:firefoxOptions': { args: [Array] } }
+}
+2020-09-14T01:32:20.244Z INFO webdriver: COMMAND navigateTo("http://the-internet.herokuapp.com/checkboxes")
+2020-09-14T01:32:20.245Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/553d973a-c50a-5048-bd0a-5566b99371d9/url
+2020-09-14T01:32:20.246Z INFO webdriver: DATA { url: 'http://the-internet.herokuapp.com/checkboxes' }
+2020-09-14T01:32:22.470Z INFO webdriver: COMMAND findElement("css selector", "#checkboxes input:first-Child")
+2020-09-14T01:32:22.470Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/553d973a-c50a-5048-bd0a-5566b99371d9/element
+2020-09-14T01:32:22.470Z INFO webdriver: DATA { using: 'css selector', value: '#checkboxes input:first-Child' }
+2020-09-14T01:32:22.516Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '59f58e3e-ec20-5443-ad74-98251d6704a7'
+}
+2020-09-14T01:32:22.539Z INFO webdriver: COMMAND isElementSelected("59f58e3e-ec20-5443-ad74-98251d6704a7")
+2020-09-14T01:32:22.539Z INFO webdriver: [GET] http://localhost:4444/wd/hub/session/553d973a-c50a-5048-bd0a-5566b99371d9/element/59f58e3e-ec20-5443-ad74-98251d6704a7/selected
+2020-09-14T01:32:22.561Z INFO webdriver: RESULT false
+2020-09-14T01:32:22.594Z INFO webdriver: COMMAND findElement("css selector", "#checkboxes input:last-Child")
+2020-09-14T01:32:22.594Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/553d973a-c50a-5048-bd0a-5566b99371d9/element
+2020-09-14T01:32:22.594Z INFO webdriver: DATA { using: 'css selector', value: '#checkboxes input:last-Child' }
+2020-09-14T01:32:22.692Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'cdf5216f-ab33-1747-b20d-a0e7e07d839f'
+}
+2020-09-14T01:32:22.696Z INFO webdriver: COMMAND isElementSelected("cdf5216f-ab33-1747-b20d-a0e7e07d839f")
+2020-09-14T01:32:22.697Z INFO webdriver: [GET] http://localhost:4444/wd/hub/session/553d973a-c50a-5048-bd0a-5566b99371d9/element/cdf5216f-ab33-1747-b20d-a0e7e07d839f/selected
+2020-09-14T01:32:22.717Z INFO webdriver: RESULT true
+2020-09-14T01:32:22.781Z INFO webdriver: COMMAND navigateTo("http://the-internet.herokuapp.com/checkboxes")
+2020-09-14T01:32:22.781Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/553d973a-c50a-5048-bd0a-5566b99371d9/url
+2020-09-14T01:32:22.781Z INFO webdriver: DATA { url: 'http://the-internet.herokuapp.com/checkboxes' }
+2020-09-14T01:32:23.379Z INFO webdriver: COMMAND findElement("css selector", "#checkboxes input:first-Child")
+2020-09-14T01:32:23.379Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/553d973a-c50a-5048-bd0a-5566b99371d9/element
+2020-09-14T01:32:23.379Z INFO webdriver: DATA { using: 'css selector', value: '#checkboxes input:first-Child' }
+2020-09-14T01:32:23.415Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '336618b5-fefc-aa45-a88c-23fd7be48762'
+}
+2020-09-14T01:32:23.421Z INFO webdriver: COMMAND isElementSelected("336618b5-fefc-aa45-a88c-23fd7be48762")
+2020-09-14T01:32:23.421Z INFO webdriver: [GET] http://localhost:4444/wd/hub/session/553d973a-c50a-5048-bd0a-5566b99371d9/element/336618b5-fefc-aa45-a88c-23fd7be48762/selected
+2020-09-14T01:32:23.568Z INFO webdriver: RESULT false
+2020-09-14T01:32:23.572Z INFO webdriver: COMMAND findElement("css selector", "#checkboxes input:first-Child")
+2020-09-14T01:32:23.572Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/553d973a-c50a-5048-bd0a-5566b99371d9/element
+2020-09-14T01:32:23.572Z INFO webdriver: DATA { using: 'css selector', value: '#checkboxes input:first-Child' }
+2020-09-14T01:32:23.616Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '336618b5-fefc-aa45-a88c-23fd7be48762'
+}
+2020-09-14T01:32:23.621Z INFO webdriver: COMMAND elementClick("336618b5-fefc-aa45-a88c-23fd7be48762")
+2020-09-14T01:32:23.621Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/553d973a-c50a-5048-bd0a-5566b99371d9/element/336618b5-fefc-aa45-a88c-23fd7be48762/click
+2020-09-14T01:32:23.884Z INFO webdriver: COMMAND findElement("css selector", "#checkboxes input:first-Child")
+2020-09-14T01:32:23.884Z INFO webdriver: [POST] http://localhost:4444/wd/hub/session/553d973a-c50a-5048-bd0a-5566b99371d9/element
+2020-09-14T01:32:23.885Z INFO webdriver: DATA { using: 'css selector', value: '#checkboxes input:first-Child' }
+2020-09-14T01:32:23.924Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '336618b5-fefc-aa45-a88c-23fd7be48762'
+}
+2020-09-14T01:32:23.928Z INFO webdriver: COMMAND isElementSelected("336618b5-fefc-aa45-a88c-23fd7be48762")
+2020-09-14T01:32:23.929Z INFO webdriver: [GET] http://localhost:4444/wd/hub/session/553d973a-c50a-5048-bd0a-5566b99371d9/element/336618b5-fefc-aa45-a88c-23fd7be48762/selected
+2020-09-14T01:32:23.968Z INFO webdriver: RESULT true
+2020-09-14T01:32:24.022Z INFO webdriver: COMMAND deleteSession()
+2020-09-14T01:32:24.022Z INFO webdriver: [DELETE] http://localhost:4444/wd/hub/session/553d973a-c50a-5048-bd0a-5566b99371d9

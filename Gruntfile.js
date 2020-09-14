@@ -11,5 +11,5 @@ module.exports = function(grunt) {
 
     grunt.loadNpmTasks('grunt-jasmine');
     grunt.loadNpmTasks('grunt-webdriver');
-    grunt.registerTask('default', ['webdriver:test']);
+    grunt.registerTask('default', ['webdriver:test-local']);
 };

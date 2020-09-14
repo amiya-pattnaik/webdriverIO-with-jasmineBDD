@@ -1,0 +1,30 @@
+2020-09-14T01:31:39.698Z DEBUG @wdio/utils:initialiseServices: initialise service "selenium-standalone" as NPM package
+2020-09-14T01:31:39.970Z INFO @wdio/cli:launcher: Run onPrepare hook
+2020-09-14T01:31:54.142Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2020-09-14T01:31:54.144Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2020-09-14T01:31:54.144Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2020-09-14T01:31:54.144Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2020-09-14T01:31:54.144Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2020-09-14T01:31:54.144Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2020-09-14T01:31:54.144Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2020-09-14T01:31:54.144Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2020-09-14T01:31:54.147Z INFO @wdio/local-runner: Start worker 0-0 with arg: ./test/config/wdio.local.conf.js
+2020-09-14T01:31:54.158Z INFO @wdio/local-runner: Start worker 0-1 with arg: ./test/config/wdio.local.conf.js
+2020-09-14T01:31:54.167Z INFO @wdio/local-runner: Start worker 0-2 with arg: ./test/config/wdio.local.conf.js
+2020-09-14T01:31:54.175Z INFO @wdio/local-runner: Start worker 0-3 with arg: ./test/config/wdio.local.conf.js
+2020-09-14T01:31:54.184Z INFO @wdio/local-runner: Start worker 1-0 with arg: ./test/config/wdio.local.conf.js
+2020-09-14T01:31:54.205Z INFO @wdio/local-runner: Start worker 1-1 with arg: ./test/config/wdio.local.conf.js
+2020-09-14T01:31:54.230Z INFO @wdio/local-runner: Start worker 1-2 with arg: ./test/config/wdio.local.conf.js
+2020-09-14T01:31:54.255Z INFO @wdio/local-runner: Start worker 1-3 with arg: ./test/config/wdio.local.conf.js
+2020-09-14T01:32:09.584Z DEBUG @wdio/local-runner: Runner 0-0 finished with exit code 0
+2020-09-14T01:32:10.434Z DEBUG @wdio/local-runner: Runner 0-2 finished with exit code 0
+2020-09-14T01:32:12.432Z DEBUG @wdio/local-runner: Runner 0-3 finished with exit code 0
+2020-09-14T01:32:13.940Z DEBUG @wdio/local-runner: Runner 0-1 finished with exit code 0
+2020-09-14T01:32:27.278Z DEBUG @wdio/local-runner: Runner 1-2 finished with exit code 0
+2020-09-14T01:32:27.325Z DEBUG @wdio/local-runner: Runner 1-0 finished with exit code 0
+2020-09-14T01:32:29.409Z DEBUG @wdio/local-runner: Runner 1-3 finished with exit code 0
+2020-09-14T01:32:29.954Z DEBUG @wdio/local-runner: Runner 1-1 finished with exit code 0
+2020-09-14T01:32:29.955Z INFO @wdio/cli:launcher: Run onComplete hook
+2020-09-14T01:32:29.955Z INFO @wdio/selenium-standalone-service: shutting down all browsers
+2020-09-14T01:32:29.985Z INFO @wdio/local-runner: Shutting down spawned worker
+2020-09-14T01:32:30.240Z INFO @wdio/local-runner: Waiting for 0 to shut down gracefully
