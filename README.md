@@ -4,7 +4,7 @@ This repository contains a collection of sample webdriverIO (v6x) projects and l
 
 It support ES6, ES8 (via babel-register) and uses Grunt to manage tasks, provides utilities to read data from MS-Excel, executes SQL statements to any database(RDBMS such as Oracle, TeraData, MySQL, Vertica) for end to end testing. It generate Spec, JUNIT, Allure reporters as well.
 
-💡 If you need the wdio-v5 boilerplate project, please take the code from v4 branch: click [here](https://github.com/amiya-pattnaik/webdriverIO-with-jasmineBDD/tree/wdio-v5)
+💡 If you need the wdio-v5 boilerplate project, please take the code from v5 branch: click [here](https://github.com/amiya-pattnaik/webdriverIO-with-jasmineBDD/tree/wdio-v5)
 
 
 ### Installation
@@ -18,15 +18,19 @@ This project is tested on **Node v12.0.0** and above.  While earlier versions of
 
 ### Selenium Tests / Appium Tests
 
-  To run your test you must have selenium / Appium server up and running to execute any webdriverIO tests, or it will fail fast with an error. To start selenium automatically it has been added as part of `services: ['selenium-standalone']` in the *.conf.js.  That's all there is to it.!.
+  To run your test you must have selenium / Appium server up and running to execute any webdriverIO tests, or it will fail fast with an error. To start selenium automatically it has been added as part of `services: ['selenium-standalone']` and `services: ['appium']` in the *.conf.js.  That's all there is to it.!.
 
 ### Run Some Sample Tests
 
 To execute the entire test suite in local development, you can use any one of the options mentioned below
 
-Option 1: `npm run test-local`
+Option 1: `npm run test-local`. You can also run in SauceLabs and BrowserStack using `npm run test-sauce`, `npm run test-browserstack`.
 
-Option 2:  `grunt webdriver:test-local`.  This executes all features in the [`./test/specs/*.js`]  directory with a Spec reporter by default.
+Option 2: `grunt webdriver:test-local`.  This executes all spec files in the [`./test/specs/*.js`] directory.
+The default option for Grunt run is `webdriver:test-local`. But you can use `webdriver:test-sauce` or `test-browserstack` based on your requirements.
+
+To execute tests on `mobile device` use : `npm run test-mobile`.
+
 
 💡 Before running mobile tests, perform the requisite Appium setup. For hassle free `one click Appium setup on OSX` refer [appium-setup-made-easy-OSX](https://github.com/amiya-pattnaik/appium-setup-made-easy-OSX) or refer [Appium Docs](http://appium.io/getting-started.html?lang=en)
 
@@ -37,6 +41,10 @@ WebdriverIO uses configuration files to setup and execute tests in specific ways
 ### SauceLabs / BrowserStack Integration
 
 `SauceLabs` and `BrowserStack` specific code has been added in the `wdio.sauce.conf.js` and  `wdio.browserstack.conf.js` under the /test/config folder. You just need to provide your SauceLabs/BrowserStack credentials in the config file. To run test on SauceLabs, execute command `npm run test-sauce` and on BrowserStack `npm run test-browserstack`.
+
+### Logs  
+
+Complete set of execution `logs` will be generated during the run time and can be found in the parent folder location /logs.
 
 ### Reporters
 
