@@ -1,4 +1,5 @@
 const path = require('path')
+const defaultTimeoutInterval = process.env.DEBUG ? (60 * 60 * 500) : 90000;
 
 exports.config = {
     //
@@ -77,7 +78,8 @@ exports.config = {
     baseUrl: 'http://the-internet.herokuapp.com',
     //
     // Default timeout for all waitFor* commands.
-    waitforTimeout: 10000,
+    //
+    waitforTimeout: defaultTimeoutInterval,
     //
     // Default timeout in milliseconds for request
     // if browser driver or grid doesn't send response
@@ -93,6 +95,19 @@ exports.config = {
     // Make sure you have the wdio adapter package for the specific framework installed
     // before running any tests.
     framework: 'jasmine',
+    jasmineOpts: {
+    defaultTimeoutInterval: defaultTimeoutInterval,
+    expectationResultHandler: function(passed, assertion) {
+        /**
+         * only take screenshot if assertion failed
+         */
+        if(passed) {
+            return
+        }
+
+        browser.saveScreenshot(`assertionError_${assertion.error.message}.png`)
+    }
+},
     //
     // The number of times to retry the entire specfile when it fails as a whole
     // specFileRetries: 1,

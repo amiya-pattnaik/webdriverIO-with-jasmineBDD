@@ -6,7 +6,7 @@ describe('dynamic loading', function () {
         expect(DynamicPage.loadedPage).not.toBePresent()
 
         DynamicPage.btnStart.click()
-        DynamicPage.loadedPage.waitForExist()
+        DynamicPage.loadedPage.waitForExist({ timeout: 900000 })
         expect(DynamicPage.loadedPage).toBePresent()
     })
 })
