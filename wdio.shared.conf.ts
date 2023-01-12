@@ -1,7 +1,8 @@
-const path = require('path')
-const defaultTimeoutInterval = process.env.DEBUG ? (60 * 60 * 500) : 90000;
+import url  from 'node:url'
+import path from 'node:path'
 
-exports.config = {
+const __dirname = url.fileURLToPath(new URL('.', import.meta.url))
+export const config: WebdriverIO.Config = {
     //
     // ====================
     // Runner Configuration
@@ -20,7 +21,7 @@ exports.config = {
     // directory is where your package.json resides, so `wdio` will be called from there.
     //
     specs: [
-        './test/specs/**/*.js'
+        './test/specs/**/*.ts'
     ],
     // Patterns to exclude.
     exclude: [
@@ -42,7 +43,7 @@ exports.config = {
     // and 30 processes will get spawned. The property handles how many capabilities
     // from the same test should run tests.
     //
-    maxInstances: 15,
+    maxInstances: 10,
     //
     // ===================
     // Test Configurations
@@ -51,7 +52,7 @@ exports.config = {
     //
     // Level of logging verbosity: trace | debug | info | warn | error | silent
     logLevel: 'trace',
-    outputDir: path.resolve(__dirname, '../../logs'),
+    outputDir: path.resolve(__dirname, 'logs'),
     //
     // Set specific log levels per logger
     // loggers:
@@ -78,8 +79,7 @@ exports.config = {
     baseUrl: 'http://the-internet.herokuapp.com',
     //
     // Default timeout for all waitFor* commands.
-    //
-    waitforTimeout: defaultTimeoutInterval,
+    waitforTimeout: 10000,
     //
     // Default timeout in milliseconds for request
     // if browser driver or grid doesn't send response
@@ -96,18 +96,15 @@ exports.config = {
     // before running any tests.
     framework: 'jasmine',
     jasmineOpts: {
-    defaultTimeoutInterval: defaultTimeoutInterval,
+    defaultTimeoutInterval: 90000,
     expectationResultHandler: function(passed, assertion) {
-        /**
-         * only take screenshot if assertion failed
-         */
+        // only take screenshot if assertion failed
         if(passed) {
             return
         }
-
-        browser.saveScreenshot(`assertionError_${assertion.error.message}.png`)
-    }
-},
+          browser.saveScreenshot(`assertionError_${assertion.error.message}.png`)
+      }
+    },
     //
     // The number of times to retry the entire specfile when it fails as a whole
     // specFileRetries: 1,
@@ -127,27 +124,23 @@ exports.config = {
           disableWebdriverScreenshotsReporting: true,
       }],
 
-      ['json', {
-        outputDir: './test/reports/json-results'
-        }],
+      // ['json', {
+      //   outputDir: './test/reports/json-results'
+      //   }],
 
-      ['junit', {
-        outputDir: './test/reports/junit-results',
-        outputFileFormat: function(options) {
-              return `results-${options.cid}.${options.capabilities}.xml`
-          }
-      }],
+      // ['junit', {
+      //   outputDir: './test/reports/junit-results',
+      //   outputFileFormat: function(options) {
+      //         return `results-${options.cid}.${options.capabilities}.xml`
+      //     }
+      // }],
 
     ],
     //
     // Options to be passed to Jasmine.
-    jasmineNodeOpts: {
-        //
+    jasmineOpts: {
         // Jasmine default timeout
         defaultTimeoutInterval: 60000,
-        helpers: [
-            require.resolve('@babel/register')
-        ]
         //
         // The Jasmine framework allows interception of each assertion in order to log the state of the application
         // or website depending on the result. For example, it is pretty handy to take a screenshot every time
