@@ -1,6 +1,6 @@
-### WebdriverIO-v7 boilerplate code with Jasmine BDD
+### WebdriverIO-v8 boilerplate code with Jasmine BDD
 
-This repository contains a collection of sample webdriverIO (v7) projects and libraries that demonstrate how to use the tool and develop automation script using the Jasmine BDD framework. It uses the `chromedriver` NPM package that wraps the ChromeDriver for you. This service does not require a Selenium server, but uses ChromeDriver to communicate with the browser directly.
+This repository contains a collection of sample webdriverIO (v8) projects and libraries that demonstrate how to use the tool and develop automation script using the Jasmine BDD framework. It uses the `chromedriver` NPM package that wraps the ChromeDriver for you. This service does not require a Selenium server, but uses ChromeDriver to communicate with the browser directly.
 
 This boilerplate code support Typescript, also provides sample utilities to read data from MS-Excel, executes SQL statements to any database (RDBMS such as Oracle, TeraData, MySQL, Vertica) for end to end testing. It generate Allure, JSON, Junit/Xunit, Spec reporters as well. `Please note that at the time of writing (January 2023) the wdio reporting module of JSON, Junit/Xunit are not fully compatible with V8 hence it is disabled from this boilerplate code.`
 
